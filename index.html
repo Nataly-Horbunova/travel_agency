@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <title>Star Travels</title>
+
+    <!-- ------------------- FONT AWESOME -------------- -->
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"-->
+    <!--          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="-->
+    <!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
+
+    <!-- -------------------- CUSTOM STYLES---------------   -->
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+<div class="background"></div>
+<!--  ========================== HEADER AND HERO SECTION ================-->
+
+<div class="header-and-hero-section">
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="header-logo-wrapper">
+                <img src="./assets/logo.svg" alt="logo" class="header-logo">
+                <span class="header-company-name">Star Travels</span>
+            </a>
+            <nav class="header-nav">
+                <div class="menu-overlay"></div>
+                <div class="header-nav-burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </div>
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">Home</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">Packages</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">Tours</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">About Us</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1 class="hero-tittle">Your Dream Vacation Awaits</h1>
+            <h2 class="hero-slogan">Explore the World with us.</h2>
+        </div>
+    </div>
+    <ul class="flights-list">
+        <li class="flights-from-select">
+            <img src="./assets/location_icon.svg" alt="location icon" class="flights-location-icon">
+            <span class="flights-from-text">From</span>
+            <img src="./assets/arrow_down.svg" alt="arrow" class="flights-arrow">
+        </li>
+        <li class="flights-to-select">
+            <img src="./assets/location_icon.svg" alt="location icon" class="flights-location-icon">
+            <span class="flights-to-text">To</span>
+            <img src="./assets/arrow_down.svg" alt="arrow" class="flights-arrow">
+        </li>
+        <li class="flights-departure-date">
+            <span class="flights-departure-date-text">Departure Date</span>
+            <img src="./assets/calendar_icon.svg" alt="calendar" class="flights-date-icon">
+        </li>
+        <li class="flights-return-date">
+            <span class="flights-return-date-text">Return Date</span>
+            <img src="./assets/calendar_icon.svg" alt="calendar" class="flights-date-icon">
+        </li>
+        <li class="flights-travellers">
+            <span class="flights-to-text">Traveller(s)</span>
+            <img src="./assets/arrow_down.svg" alt="arrow" class="flights-arrow">
+        </li>
+    </ul>
+</div>
+
+<!-- ======================== POPULAR DESTINATIONS SECTION ================= -->
+<section class="section-popular-destinations">
+    <div class="container">
+        <h2 class="popular-destinations-tittle section-tittle">Popular Destinations</h2>
+        <div class="popular-destinations-carousel">
+            <div class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow left"></div>
+            <ul class="popular-destinations-cards-list">
+                <li class="popular-destinations-card-item">
+                    <div class="popular-destinations-card-img-wrapper">
+                        <img src="./assets/venice.png" alt="Venice" class="popular-destinations-card-img">
+                    </div>
+                    <div class="popular-destinations-card-info">
+                        <h3 class="popular-destinations-card-tittle">Venice</h3>
+                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div class="popular-destinations-card-price">$199</div>
+                        <div class="popular-destinations-card-map">See on map</div>
+                        <div id="iframe-overlay">
+                            <iframe class="iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358560.61748403544!2d12.107151113975991!3d45.40420075401476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2z0JLQtdC90LXRhtC40Y8sINCY0YLQsNC70LjRjw!5e0!3m2!1sru!2sua!4v1682155696860!5m2!1sru!2sua"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="popular-destinations-card-item">
+                    <div class="popular-destinations-card-img-wrapper">
+                        <img src="./assets/san_paolo.png" alt="San Paolo" class="popular-destinations-card-img">
+                    </div>
+                    <div class="popular-destinations-card-info">
+                        <h3 class="popular-destinations-card-tittle">San Paolo</h3>
+                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div class="popular-destinations-card-price">$239</div>
+                        <div class="popular-destinations-card-map">See on map</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22422.4542528024!2d9.987204594278145!3d45.372893924660744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47810e6b9af246e5%3A0x8cd5aa4cb9d2e838!2zMjUwMjAgU2FuIFBhb2xvINCR0YDQtdGI0LjQsCwg0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1682156746680!5m2!1sru!2sua"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </li>
+                <li class="popular-destinations-card-item">
+                    <div class="popular-destinations-card-img-wrapper">
+                        <img src="./assets/barbados.png" alt="Barbados" class="popular-destinations-card-img">
+                    </div>
+                    <div class="popular-destinations-card-info">
+                        <h3 class="popular-destinations-card-tittle">Barbados</h3>
+                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div class="popular-destinations-card-price">$299</div>
+                        <div class="popular-destinations-card-map">See on map</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248613.8541766674!2d-59.67534193081624!3d13.188138608945488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f1fbae321aa3%3A0xeec51b38cf4362b!2z0JHQsNGA0LHQsNC00L7RgQ!5e0!3m2!1sru!2sua!4v1682156781927!5m2!1sru!2sua"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </li>
+                <li class="popular-destinations-card-item">
+                    <div class="popular-destinations-card-img-wrapper">
+                        <img src="./assets/cyprus.png" alt="Cyprus" class="popular-destinations-card-img">
+                    </div>
+                    <div class="popular-destinations-card-info">
+                        <h3 class="popular-destinations-card-tittle">Cyprus</h3>
+                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div class="popular-destinations-card-price">$259</div>
+                        <div class="popular-destinations-card-map">See on map</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669999.9926293679!2d32.30401710464857!3d35.1636347338142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1767ca494d55%3A0x324c3c807fc4146e!2z0JrQuNC_0YA!5e0!3m2!1sru!2sua!4v1682156830245!5m2!1sru!2sua"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </li>
+            </ul>
+            <div class="arrow-right"><img src="./assets/arrow_right.svg" alt="arrow right"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================== WHY US SECTION =========================== -->
+
+<section class="section-why-us">
+    <div class="container">
+        <h2 class="why-us-tittle section-tittle">Why Us?</h2>
+        <ul class="why-us-cards-list">
+            <li class="why-us-card-item">
+                <img src="./assets/guarantee_icon.svg" alt="guarantee icon" class="why-us-card-img">
+                <h3 class="why-us-card-tittle">GUARANTEE</h3>
+                <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti
+                    eaque earum, est eum laudantium obcaecati quibusdam repellat sequi totam.
+                </p>
+            </li>
+            <li class="why-us-card-item">
+                <img src="./assets/service_icon.svg" alt="service icon" class="why-us-card-img">
+                <h3 class="why-us-card-tittle">SERVICE</h3>
+                <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur
+                    cupiditate dolore ea ipsam iste nam optio quas recusandae, tempore.
+                </p>
+            </li>
+            <li class="why-us-card-item">
+                <img src="./assets/experience_icon.svg" alt="experience icon" class="why-us-card-img">
+                <h3 class="why-us-card-tittle">EXPERIENCE</h3>
+                <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic
+                    iure numquam. Accusamus accusantium dolorum enim eos illum suscipit ut?
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ========================== ADVENTURE SECTION ========================== -->
+
+<section class="adventure-section">
+    <div class="container">
+        <h2 class="adventure-tittle section-tittle">Have an Adventure Today</h2>
+        <ul class="adventure-cards-list">
+            <li class="adventure-card-item canal-cruise">
+                <div class="adventure-card-description ">
+                    <h3 class="adventure-card-tittle">Canal Cruise</h3>
+                    <p class="adventure-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                    </p>
+                </div>
+                <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
+            </li>
+            <li class="adventure-card-item sailing">
+                <div class="adventure-card-description">
+                    <h3 class="adventure-card-tittle">Sailing</h3>
+                    <p class="adventure-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                    </p>
+                </div>
+                <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
+            </li>
+            <li class="adventure-card-item camping">
+                <div class="adventure-card-description">
+                    <h3 class="adventure-card-tittle">Camping</h3>
+                    <p class="adventure-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                    </p>
+                </div>
+                <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
+            </li>
+            <li class="adventure-card-item hiking">
+                <div class="adventure-card-description">
+                    <h3 class="adventure-card-tittle">Hiking</h3>
+                    <p class="adventure-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                    </p>
+                </div>
+                <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
+            </li>
+            <li class="adventure-card-item diving">
+                <div class="adventure-card-description">
+                    <h3 class="adventure-card-tittle">Scuba Diving</h3>
+                    <p class="adventure-card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+                    </p>
+                </div>
+                <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
+            </li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- ========================== LEARN MORE SECTION =================== -->
+
+<!--<section class="section-learn-more">-->
+<!--    <div class="container">-->
+<!--        <form class="subscribe-form" name="subscribe">-->
+<!--            <h3 class="subscribe-form-tittle">SUBSCRIBE TO NEWSLETTER</h3>-->
+<!--            <p class="subscribe-form-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--            <input type="text" class="subscribe-form-name" name="name">-->
+<!--            <input type="text" class="subscribe-form-email" name="email">-->
+<!--            <input type="submit" class="subscribe-form-btn btn" value="SUBSCRIBE">-->
+<!--        </form>-->
+<!--        <div class="learn-more-description">-->
+<!--            <h2 class="learn-more-tittle section-tittle">Learn more</h2>-->
+<!--            <ul class="learn-more-cards-list">-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/attractions.png" alt="attraction" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Attractions</h4>-->
+<!--                            <p class="learn-more-card-text">Top 10 Attractions</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="#" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/hotels.png" alt="hotel" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Hotels</h4>-->
+<!--                            <p class="learn-more-card-text">Top 10 Hotels</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="#" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/resorts.png" alt="resort" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Resorts</h4>-->
+<!--                            <p class="learn-more-card-text">Top 5 Resorts</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="#" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/landmarks.png" alt="Landmark" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Landmarks</h4>-->
+<!--                            <p class="learn-more-card-text">Top 10 Landmarks</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="#" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/beaches.png" alt="beach" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Beaches</h4>-->
+<!--                            <p class="learn-more-card-text">Top 10 Beaches</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="learn-more-card-item">-->
+<!--                    <a href="#" class="learn-more-card-link">-->
+<!--                        <div class="learn-more-card-img-wrapper">-->
+<!--                            <img src="./assets/islands.png" alt="islands" class="learn-more-card-img">-->
+<!--                        </div>-->
+<!--                        <div class="learn-more-card-info">-->
+<!--                            <h4 class="learn-more-card-tittle">Islands</h4>-->
+<!--                            <p class="learn-more-card-text">Top 10 Islands</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- ============================ EXPERIENCE SECTION ============================= -->
+<!--<section class="section-experience">-->
+<!--    <div class="container">-->
+<!--        <h2 class="experience-tittle section-tittle">Looking for an experience?</h2>-->
+<!--        <p class="experience-text">-->
+<!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet.-->
+<!--        </p>-->
+<!--        <button class="btn experience-btn">VIEW PACKAGES</button>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- ============================ FOOTER  ============================= -->
+<!--<footer class="footer">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-logo">-->
+<!--            <img src="./assets/logo.svg" alt="logo" class="footer-logo">-->
+<!--            <span class="footer-company-name">Star Travels</span>-->
+<!--        </div>-->
+<!--        <div class="footer-contacts">-->
+<!--            <ul class="footer-socials-list">-->
+<!--                <li class="header-socials-list-item">-->
+<!--                    <a href="https://www.instagram.com/" class="header-socials-link">-->
+<!--                        <img src="./assets/instagram_icon.svg" alt="instagram icon">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="header-socials-list-item">-->
+<!--                    <a href="https://twitter.com/" class="header-socials-link">-->
+<!--                        <img src="./assets/twitter_icon.svg" alt="twitter icon">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="header-socials-list-item">-->
+<!--                    <a href="https://www.facebook.com/" class="header-socials-link">-->
+<!--                        <img src="./assets/facebook_icon.svg" alt="facebook icon">-->
+<!--                    </a>-->
+<!--                </li>-->
+
+<!--            </ul>-->
+<!--            <div class="footer-contacts">-->
+<!--                <a href="tel:+1 334 445 623" class="contacts-telephone">-->
+<!--                    <img src="./assets/telephone_icon.svg" alt="telephone" class="contacts-telephone-icon">-->
+<!--                    <p class="contacts-telephone-text">+1 334 445 623</p>-->
+<!--                </a>-->
+<!--                <a href="mailto:contact@startravels.com" class="contacts-email">-->
+<!--                    <img src="./assets/email_icon.svg" alt="telephone" class="contacts-email-icon">-->
+<!--                    <p class="contacts-email-text">contact@startravels.com</p>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <nav class="footer-nav">-->
+<!--            <ul class="footer-nav-list">-->
+<!--                <li class="footer-nav-item">-->
+<!--                    <a href="#" class="footer-nav-link">Home</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav-item">-->
+<!--                    <a href="#" class="footer-nav-link">Packages</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav-item">-->
+<!--                    <a href="#" class="footer-nav-link">Tours</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav-item">-->
+<!--                    <a href="#" class="footer-nav-link">About Us</a>-->
+<!--                </li>-->
+<!--                <li class="footer-nav-item">-->
+<!--                    <a href="#" class="footer-nav-link">Contact</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--        <div class="footer-copyright">-->
+<!--            <span class="footer-copyright-text">Copyright 2023</span>-->
+<!--            <span class="footer-website">StarTravels.com</span>-->
+<!--            <span class="rights-reserved-text">All Rights Reserved.</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+<script src="./scripts/main.js"></script>
+
+</body>
+</html>
