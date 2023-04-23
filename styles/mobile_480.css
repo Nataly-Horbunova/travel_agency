@@ -1,6 +1,23 @@
 @media screen and (max-width: 480px) {
-
-    .header-nav-list{
+    /* ======================== HEADER AND HERO SECTION ================= */
+    .header-nav-list {
         width: 100vw;
+    }
+
+    /* ========================== ADVENTURE SECTION ========================== */
+    .adventure-cards-list {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    .adventure-cards-list li:first-child {
+        grid-row: 1/2;
+        height: 240px;
+    }
+
+    /*.========================== LEARN MORE SECTION ===================*/
+    .learn-more-card-item {
+        flex-basis: 100%;
+
     }
 }

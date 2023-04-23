@@ -1,5 +1,6 @@
 @import url('./fonts.css');
 @import url('./global.css');
 @import url('./desktop.css');
-@import url("./tablet.css");
+@import url("tablet_1024.css");
+@import url("tablet_768.css");
 @import url("./mobile_480.css");

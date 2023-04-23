@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+    /* ======================== HEADER AND HERO SECTION ================= */
+    .header-nav-burger {
+        display: block;
+    }
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .menu-overlay {
+        /*display: block;*/
+    }
+
+    .header-nav-list {
+        /*display: flex;*/
+    }
+
+    .header-nav-list {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 0 30px;
+        z-index: 3;
+        min-width: 320px;
+    }
+
+    .header-nav-list li:not(.header-nav-list li:last-child) {
+        border-bottom: 1px solid #C7C7C7;;
+    }
+
+    .header-nav-list li {
+        padding: 10px;
+    }
+
+    /* ========================== ADVENTURE SECTION ========================== */
+    .adventure-cards-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* ============================ FOOTER  ============================= */
+    .footer .container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-copyright {
+        grid-column: 1/2
+    }
+
+    .footer-logo,
+    .footer-contacts,
+    .footer-nav {
+        justify-self: center;
+    }
+
+    .footer-contacts {
+        align-items: center;
+    }
+}

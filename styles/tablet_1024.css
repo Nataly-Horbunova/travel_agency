@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+
+    /*.========================== LEARN MORE SECTION ===================*/
+
+    .section-learn-more .container{
+        flex-direction: column;
+    }
+
+    .subscribe-form{
+        max-width: 500px;
+        align-self: center;
+    }
+}
