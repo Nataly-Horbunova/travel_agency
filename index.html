@@ -8,6 +8,13 @@
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <title>Star Travels</title>
 
+    <!-- --------------------- Animate CSS --------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+          integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
     <!-- -------------------- CUSTOM STYLES---------------   -->
 
     <link rel="stylesheet" href="./styles/main.css">
@@ -53,8 +60,8 @@
     </header>
     <div class="hero">
         <div class="container">
-            <h1 class="hero-tittle">Your Dream Vacation Awaits</h1>
-            <h2 class="hero-slogan">Explore the World with us.</h2>
+            <h1 class="hero-tittle josh-js" data-josh-anim-name="fadeInDown" data-josh-duration="1500ms">Your Dream Vacation Awaits</h1>
+            <h2 class="hero-slogan josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="1500ms">Explore the World with us.</h2>
         </div>
     </div>
     <ul class="flights-list">
@@ -106,21 +113,21 @@
     <div class="container">
         <h2 class="why-us-tittle section-tittle">Why Us?</h2>
         <ul class="why-us-cards-list">
-            <li class="why-us-card-item">
+            <li class="why-us-card-item josh-js" data-josh-anim-name="fadeInLeft" data-josh-duration="1000ms">
                 <img src="./assets/guarantee_icon.svg" alt="guarantee icon" class="why-us-card-img">
                 <h3 class="why-us-card-tittle">GUARANTEE</h3>
                 <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti
                     eaque earum, est eum laudantium obcaecati quibusdam repellat sequi totam.
                 </p>
             </li>
-            <li class="why-us-card-item">
+            <li class="why-us-card-item josh-js" data-josh-anim-name="fadeIn" data-josh-duration="2000ms">
                 <img src="./assets/service_icon.svg" alt="service icon" class="why-us-card-img">
                 <h3 class="why-us-card-tittle">SERVICE</h3>
                 <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur
                     cupiditate dolore ea ipsam iste nam optio quas recusandae, tempore.
                 </p>
             </li>
-            <li class="why-us-card-item">
+            <li class="why-us-card-item josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="1000ms">
                 <img src="./assets/experience_icon.svg" alt="experience icon" class="why-us-card-img">
                 <h3 class="why-us-card-tittle">EXPERIENCE</h3>
                 <p class="why-us-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic
@@ -137,7 +144,7 @@
     <div class="container">
         <h2 class="adventure-tittle section-tittle">Have an Adventure Today</h2>
         <ul class="adventure-cards-list">
-            <li class="adventure-card-item canal-cruise">
+            <li class="adventure-card-item canal-cruise josh-js" data-josh-anim-name="fadeIn" data-josh-duration="3000ms">
                 <div class="adventure-card-description ">
                     <h3 class="adventure-card-tittle">Canal Cruise</h3>
                     <p class="adventure-card-text">
@@ -146,7 +153,7 @@
                 </div>
                 <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
             </li>
-            <li class="adventure-card-item sailing">
+            <li class="adventure-card-item sailing josh-js" data-josh-anim-name="fadeIn" data-josh-duration="3000ms">
                 <div class="adventure-card-description">
                     <h3 class="adventure-card-tittle">Sailing</h3>
                     <p class="adventure-card-text">
@@ -155,7 +162,7 @@
                 </div>
                 <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
             </li>
-            <li class="adventure-card-item camping">
+            <li class="adventure-card-item camping josh-js" data-josh-anim-name="fadeIn" data-josh-duration="3000ms">
                 <div class="adventure-card-description">
                     <h3 class="adventure-card-tittle">Camping</h3>
                     <p class="adventure-card-text">
@@ -164,7 +171,7 @@
                 </div>
                 <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
             </li>
-            <li class="adventure-card-item hiking">
+            <li class="adventure-card-item hiking josh-js" data-josh-anim-name="fadeIn" data-josh-duration="3000ms">
                 <div class="adventure-card-description">
                     <h3 class="adventure-card-tittle">Hiking</h3>
                     <p class="adventure-card-text">
@@ -173,7 +180,7 @@
                 </div>
                 <img src="./assets/arrow_in_circle.svg" alt="arrow" class="adventure-card-arrow">
             </li>
-            <li class="adventure-card-item diving">
+            <li class="adventure-card-item diving josh-js" data-josh-anim-name="fadeIn" data-josh-duration="3000ms">
                 <div class="adventure-card-description">
                     <h3 class="adventure-card-tittle">Scuba Diving</h3>
                     <p class="adventure-card-text">
@@ -191,7 +198,7 @@
 
 <section class="section-learn-more">
     <div class="container">
-        <form class="subscribe-form" name="subscribe">
+        <form class="subscribe-form josh-js" data-josh-anim-name="fadeInLeft" data-josh-duration="1500ms" name="subscribe">
             <h3 class="subscribe-form-tittle">NEWSLETTER</h3>
             <p class="subscribe-form-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque,
                 exercitationem nam obcaecati odit vel!</p>
@@ -202,7 +209,7 @@
         <div class="learn-more-description">
             <h2 class="learn-more-tittle section-tittle">Learn more</h2>
             <ul class="learn-more-cards-list">
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/attractions.png" alt="attraction" class="learn-more-card-img">
@@ -213,7 +220,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInUp" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/hotels.png" alt="hotel" class="learn-more-card-img">
@@ -224,7 +231,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInLeft" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/resorts.png" alt="resort" class="learn-more-card-img">
@@ -235,7 +242,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInRight" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/landmarks.png" alt="Landmark" class="learn-more-card-img">
@@ -246,7 +253,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInDown" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/beaches.png" alt="beach" class="learn-more-card-img">
@@ -257,7 +264,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="learn-more-card-item">
+                <li class="learn-more-card-item josh-js" data-josh-anim-name="fadeInDown" data-josh-duration="1500ms" >
                     <a href="#" class="learn-more-card-link">
                         <div class="learn-more-card-img-wrapper">
                             <img src="./assets/islands.png" alt="islands" class="learn-more-card-img">
@@ -372,6 +379,10 @@
 <script src="./scripts/DestinationsCarouselView.js"></script>
 <script src="./scripts/App.js"></script>
 <script src="./scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/joshjs@1.0.0/dist/josh.min.js"></script>
+<script>
+    const josh = new Josh();
+</script>
 
 </body>
 </html>
