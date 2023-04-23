@@ -203,20 +203,31 @@
 }
 
 .popular-destinations-carousel {
-    display: flex;
+    position: relative;
+    overflow: hidden;
 }
 
 .arrow-left, .arrow-right {
-    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
 }
 
 .popular-destinations-cards-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 26px;
-    /*overflow: hidden;*/
+    gap: 22px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .popular-destinations-card-item {
@@ -280,7 +291,7 @@
     align-self: center;
 }
 
-.map-overlay{
+.map-overlay {
     display: none;
     position: fixed;
     left: 0;
@@ -291,11 +302,11 @@
     z-index: 999;
 }
 
-.map-overlay.active{
+.map-overlay.active {
     display: block;
 }
 
-.map-wrapper{
+.map-wrapper {
     top: calc(50% - clamp(110px, calc(245 / 1400 * 100vw), 245px));
     left: calc(50% - clamp(140px, calc(320 / 1400 * 100vw), 320px));
     position: absolute;
@@ -306,7 +317,7 @@
 
 .map-wrapper iframe {
     width: clamp(260px, calc(600 / 1400 * 100vw), 600px);
-    height: clamp(200px, calc(450/ 1400 * 100vw), 450px);
+    height: clamp(200px, calc(450 / 1400 * 100vw), 450px);
 }
 
 /*=========================== WHY US SECTION ===========================*/

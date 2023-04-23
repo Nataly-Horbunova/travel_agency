@@ -8,12 +8,6 @@
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <title>Star Travels</title>
 
-    <!-- ------------------- FONT AWESOME -------------- -->
-
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"-->
-    <!--          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="-->
-    <!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
-
     <!-- -------------------- CUSTOM STYLES---------------   -->
 
     <link rel="stylesheet" href="./styles/main.css">
@@ -90,17 +84,19 @@
 </div>
 
 <!-- ======================== POPULAR DESTINATIONS SECTION ================= -->
+
 <section class="section-popular-destinations">
     <div class="container">
         <h2 class="popular-destinations-tittle section-tittle">Popular Destinations</h2>
+        <div class="map-overlay">
+            <div class="map-wrapper"></div>
+        </div>
         <div class="popular-destinations-carousel">
-            <div class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow left"></div>
-            <div class="map-overlay">
-                <div class="map-wrapper"></div>
-            </div>
             <ul class="popular-destinations-cards-list"></ul>
+            <div class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow left"></div>
             <div class="arrow-right"><img src="./assets/arrow_right.svg" alt="arrow right"></div>
         </div>
+
     </div>
 </section>
 
@@ -370,6 +366,11 @@
     </div>
 </footer>
 
+
+<script src="./scripts/BurgerMenu.js"></script>
+<script src="./scripts/DestinationsCarouselModel.js"></script>
+<script src="./scripts/DestinationsCarouselView.js"></script>
+<script src="./scripts/App.js"></script>
 <script src="./scripts/main.js"></script>
 
 </body>
