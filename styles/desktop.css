@@ -58,9 +58,6 @@
 
 .menu-overlay {
     display: none;
-}
-
-.menu-overlay {
     position: fixed;
     left: 0;
     top: 70px;
@@ -70,6 +67,15 @@
     z-index: 2;
 }
 
+.menu-overlay.active {
+    display: block;
+}
+
+.header-nav-list.active {
+    transition: 0.5s;
+    display: flex;
+    transform: translateY(70px);
+}
 
 .header-nav-burger {
     display: none;
@@ -210,7 +216,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 26px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .popular-destinations-card-item {
@@ -274,27 +280,34 @@
     align-self: center;
 }
 
-.popular-destinations-card-item iframe {
+.map-overlay{
     display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(61, 60, 60, 0.44);
+    z-index: 999;
 }
 
-/*iframe.iframe{*/
-/*    display:block;*/
-/*    z-index: 51;*/
-/*}*/
+.map-overlay.active{
+    display: block;
+}
 
-/*.iframe-overlay{*/
-/*    display:block;*/
-/*    position: fixed;*/
-/*    top:0;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    z-index: 50;*/
-/*    background-color: rgba(61, 60, 60, 0.44);;*/
-/*}*/
+.map-wrapper{
+    top: calc(50% - clamp(110px, calc(245 / 1400 * 100vw), 245px));
+    left: calc(50% - clamp(140px, calc(320 / 1400 * 100vw), 320px));
+    position: absolute;
+    background-color: #fff;
+    padding: clamp(10px, calc(20 / 1400 * 100vw), 20px);
+    z-index: 1000;
+}
+
+.map-wrapper iframe {
+    width: clamp(260px, calc(600 / 1400 * 100vw), 600px);
+    height: clamp(200px, calc(450/ 1400 * 100vw), 450px);
+}
 
 /*=========================== WHY US SECTION ===========================*/
 
@@ -582,7 +595,7 @@
 
 .footer-logo,
 .footer-contacts,
-.footer-nav{
+.footer-nav {
     align-self: center;
 }
 

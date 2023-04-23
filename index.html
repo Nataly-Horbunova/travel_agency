@@ -95,79 +95,12 @@
         <h2 class="popular-destinations-tittle section-tittle">Popular Destinations</h2>
         <div class="popular-destinations-carousel">
             <div class="arrow-left"><img src="./assets/arrow_left.svg" alt="arrow left"></div>
-            <ul class="popular-destinations-cards-list">
-                <li class="popular-destinations-card-item">
-                    <div class="popular-destinations-card-img-wrapper">
-                        <img src="./assets/venice.png" alt="Venice" class="popular-destinations-card-img">
-                    </div>
-                    <div class="popular-destinations-card-info">
-                        <h3 class="popular-destinations-card-tittle">Venice</h3>
-                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
-                        <div class="popular-destinations-card-price">$199</div>
-                        <div class="popular-destinations-card-map">See on map</div>
-
-                    </div>
-
-                </li>
-                <li class="popular-destinations-card-item">
-                    <div class="popular-destinations-card-img-wrapper">
-                        <img src="./assets/san_paolo.png" alt="San Paolo" class="popular-destinations-card-img">
-                    </div>
-                    <div class="popular-destinations-card-info">
-                        <h3 class="popular-destinations-card-tittle">San Paolo</h3>
-                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
-                        <div class="popular-destinations-card-price">$239</div>
-                        <div class="popular-destinations-card-map">See on map</div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22422.4542528024!2d9.987204594278145!3d45.372893924660744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47810e6b9af246e5%3A0x8cd5aa4cb9d2e838!2zMjUwMjAgU2FuIFBhb2xvINCR0YDQtdGI0LjQsCwg0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1682156746680!5m2!1sru!2sua"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                </li>
-                <li class="popular-destinations-card-item">
-                    <div class="popular-destinations-card-img-wrapper">
-                        <img src="./assets/barbados.png" alt="Barbados" class="popular-destinations-card-img">
-                    </div>
-                    <div class="popular-destinations-card-info">
-                        <h3 class="popular-destinations-card-tittle">Barbados</h3>
-                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
-                        <div class="popular-destinations-card-price">$299</div>
-                        <div class="popular-destinations-card-map">See on map</div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248613.8541766674!2d-59.67534193081624!3d13.188138608945488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c43f1fbae321aa3%3A0xeec51b38cf4362b!2z0JHQsNGA0LHQsNC00L7RgQ!5e0!3m2!1sru!2sua!4v1682156781927!5m2!1sru!2sua"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                </li>
-                <li class="popular-destinations-card-item">
-                    <div class="popular-destinations-card-img-wrapper">
-                        <img src="./assets/cyprus.png" alt="Cyprus" class="popular-destinations-card-img">
-                    </div>
-                    <div class="popular-destinations-card-info">
-                        <h3 class="popular-destinations-card-tittle">Cyprus</h3>
-                        <p class="popular-destinations-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
-                        <div class="popular-destinations-card-price">$259</div>
-                        <div class="popular-destinations-card-map">See on map</div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669999.9926293679!2d32.30401710464857!3d35.1636347338142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1767ca494d55%3A0x324c3c807fc4146e!2z0JrQuNC_0YA!5e0!3m2!1sru!2sua!4v1682156830245!5m2!1sru!2sua"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </li>
-            </ul>
+            <div class="map-overlay">
+                <div class="map-wrapper"></div>
+            </div>
+            <ul class="popular-destinations-cards-list"></ul>
             <div class="arrow-right"><img src="./assets/arrow_right.svg" alt="arrow right"></div>
         </div>
-
     </div>
 </section>
 
@@ -393,15 +326,19 @@
 
             </ul>
             <a href="tel:+1 334 445 623" class="contacts-telephone">
-                <svg class="contacts-telephone-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.1374 13.75C11.5154 13.75 9.93444 13.3905 8.39443 12.6715C6.85391 11.953 5.48968 11.003 4.30172 9.8215C3.11327 8.6405 2.15768 7.28425 1.43495 5.75275C0.711714 4.22175 0.350098 2.65 0.350098 1.0375C0.350098 0.8125 0.425539 0.625 0.576422 0.475C0.727305 0.325 0.915909 0.25 1.14223 0.25H4.19761C4.37364 0.25 4.53081 0.30625 4.66912 0.41875C4.80743 0.53125 4.88916 0.675 4.91431 0.85L5.40468 3.475C5.42983 3.65 5.42681 3.80925 5.39563 3.95275C5.36394 4.09675 5.29152 4.225 5.17835 4.3375L3.36776 6.175C3.89585 7.075 4.55596 7.91875 5.3481 8.70625C6.14023 9.49375 7.0141 10.175 7.96969 10.75L9.74257 8.9875C9.85573 8.875 10.0036 8.7905 10.1862 8.734C10.3682 8.678 10.5473 8.6625 10.7233 8.6875L13.326 9.2125C13.5021 9.25 13.6467 9.33425 13.7598 9.46525C13.873 9.59675 13.9296 9.75 13.9296 9.925V12.9625C13.9296 13.1875 13.8541 13.375 13.7032 13.525C13.5524 13.675 13.3638 13.75 13.1374 13.75Z" fill="#262626"/>
+                <svg class="contacts-telephone-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.1374 13.75C11.5154 13.75 9.93444 13.3905 8.39443 12.6715C6.85391 11.953 5.48968 11.003 4.30172 9.8215C3.11327 8.6405 2.15768 7.28425 1.43495 5.75275C0.711714 4.22175 0.350098 2.65 0.350098 1.0375C0.350098 0.8125 0.425539 0.625 0.576422 0.475C0.727305 0.325 0.915909 0.25 1.14223 0.25H4.19761C4.37364 0.25 4.53081 0.30625 4.66912 0.41875C4.80743 0.53125 4.88916 0.675 4.91431 0.85L5.40468 3.475C5.42983 3.65 5.42681 3.80925 5.39563 3.95275C5.36394 4.09675 5.29152 4.225 5.17835 4.3375L3.36776 6.175C3.89585 7.075 4.55596 7.91875 5.3481 8.70625C6.14023 9.49375 7.0141 10.175 7.96969 10.75L9.74257 8.9875C9.85573 8.875 10.0036 8.7905 10.1862 8.734C10.3682 8.678 10.5473 8.6625 10.7233 8.6875L13.326 9.2125C13.5021 9.25 13.6467 9.33425 13.7598 9.46525C13.873 9.59675 13.9296 9.75 13.9296 9.925V12.9625C13.9296 13.1875 13.8541 13.375 13.7032 13.525C13.5524 13.675 13.3638 13.75 13.1374 13.75Z"
+                          fill="#262626"/>
                 </svg>
 
                 <p class="contacts-telephone-text">+1 334 445 623</p>
             </a>
             <a href="mailto:contact@startravels.com" class="contacts-email">
-                <svg class="contacts-email-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.4374 1.5C15.4374 0.675 14.7584 0 13.9286 0H1.85795C1.02809 0 0.349121 0.675 0.349121 1.5V10.5C0.349121 11.325 1.02809 12 1.85795 12H13.9286C14.7584 12 15.4374 11.325 15.4374 10.5V1.5ZM13.9286 1.5L7.89327 5.25L1.85795 1.5H13.9286ZM13.9286 10.5H1.85795V3L7.89327 6.75L13.9286 3V10.5Z" fill="#262626"/>
+                <svg class="contacts-email-icon" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4374 1.5C15.4374 0.675 14.7584 0 13.9286 0H1.85795C1.02809 0 0.349121 0.675 0.349121 1.5V10.5C0.349121 11.325 1.02809 12 1.85795 12H13.9286C14.7584 12 15.4374 11.325 15.4374 10.5V1.5ZM13.9286 1.5L7.89327 5.25L1.85795 1.5H13.9286ZM13.9286 10.5H1.85795V3L7.89327 6.75L13.9286 3V10.5Z"
+                          fill="#262626"/>
                 </svg>
                 <p class="contacts-email-text">contact@startravels.com</p>
             </a>
