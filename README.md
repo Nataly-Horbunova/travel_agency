@@ -14,6 +14,7 @@ This educational project is a landing page for a tour agency. It is built using 
 - HTML
 - CSS
 - JavaScript
+- Animate CSS
 
 ## Access the App
 
